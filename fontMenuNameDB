@@ -1,0 +1,12 @@
+[AFDKOSample-Light]
+  f=AFDKO Sample
+  s=L
+  l=AFDKO Sample L
+
+  f=3,1,0x411,AFDKO \30b5\30f3\30d7\30eb
+  s=3,1,0x411,L
+  l=3,1,0x411,AFDKO \30b5\30f3\30d7\30eb L
+
+  f=1,1,11,AFDKO \83\54\83\93\83\76\83\8b
+  s=1,1,11,L
+  l=1,1,11,AFDKO \83\54\83\93\83\76\83\8b L
