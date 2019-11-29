@@ -1,6 +1,6 @@
-# afdko-test
+# font-engineering-playground
 
-これは [AFDKO](https://github.com/adobe-type-tools/afdko) を利用しいろいろフォントをビルドしてみるリポジトリです
+これはフォントエンジニアリングに関する技術検証とかあれこれを試すリポジトリです
 
 ## やってみたいこと
 
@@ -19,3 +19,7 @@
 
 - [x] ディレクトリ整理
 - [ ] 各リポジトリに使ったコマンドと資料を貼る
+
+## キーワード
+
+- [AFDKO](https://github.com/adobe-type-tools/afdko) 
