@@ -5,14 +5,14 @@
 ## やったこと
 
 - afdko
-  - [margefonts](./margefonts/README.md)
-  - [makeotf](./makeotf/README.md)
-  - [txでのグリフ一覧pdf出力](./tx-pdf/README.md)
-  - [rotatefont](./rotatefont/README.md)
-  - [ttxで.ttxを吐き出してみる](./ttx/README.md)
+  - [margefonts](./afdko/margefonts/README.md)
+  - [makeotf](./afdko/makeotf/README.md)
+  - [txでのグリフ一覧pdf出力](./afdko/tx-pdf/README.md)
+  - [rotatefont](./afdko/rotatefont/README.md)
+  - [ttxで.ttxを吐き出してみる](./afdko/ttx/README.md)
 - ufo
-  - [otf2ufo](./otf2ufo/README.md)
-  - [svgをufo経由でotfにする(svg2otf-via-ufo)](./svg2otf-via-ufo/README.md)
+  - [otf2ufo](./ufo/otf2ufo/README.md)
+  - [svgをufo経由でotfにする(svg2otf-via-ufo)](./ufo/svg2otf-via-ufo/README.md)
 
 ## やってみたいこと
 
