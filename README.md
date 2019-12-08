@@ -13,10 +13,11 @@
 - ufo
   - [otf2ufo](./ufo/otf2ufo/README.md)
   - [svgをufo経由でotfにする(svg2otf-via-ufo)](./ufo/svg2otf-via-ufo/README.md)
+  - [latin-font](./ufo/latin-font/README.md)
 
 ## やってみたいこと
 
-- [ ] svg => ufo => otfで欧文フォントを作ってみたい
+- [x] svg => ufo => otfで欧文フォントを作ってみたい
 - [ ] メトリクスについて理解する
 - [ ] OpenTypeのfeaturesについていろいろ作ってみたい
   - [ ] GSUB(リガチャ)
