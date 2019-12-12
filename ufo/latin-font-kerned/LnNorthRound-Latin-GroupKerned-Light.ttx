@@ -17,12 +17,12 @@
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
     <fontRevision value="1.001"/>
-    <checkSumAdjustment value="0xb3fc029c"/>
+    <checkSumAdjustment value="0xb3da10ca"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00000011"/>
     <unitsPerEm value="1000"/>
     <created value="Tue Dec 10 08:27:00 2019"/>
-    <modified value="Thu Dec 12 22:39:08 2019"/>
+    <modified value="Thu Dec 12 22:11:39 2019"/>
     <xMin value="33"/>
     <yMin value="-235"/>
     <xMax value="440"/>
@@ -396,10 +396,26 @@
           <ValueFormat2 value="0"/>
           <!-- PairSetCount=1 -->
           <PairSet index="0">
-            <!-- PairValueCount=1 -->
+            <!-- PairValueCount=5 -->
             <PairValueRecord index="0">
+              <SecondGlyph value="cid00066"/>
+              <Value1 XAdvance="-50"/>
+            </PairValueRecord>
+            <PairValueRecord index="1">
+              <SecondGlyph value="cid00068"/>
+              <Value1 XAdvance="-50"/>
+            </PairValueRecord>
+            <PairValueRecord index="2">
+              <SecondGlyph value="cid00069"/>
+              <Value1 XAdvance="-50"/>
+            </PairValueRecord>
+            <PairValueRecord index="3">
+              <SecondGlyph value="cid00070"/>
+              <Value1 XAdvance="-50"/>
+            </PairValueRecord>
+            <PairValueRecord index="4">
               <SecondGlyph value="cid00072"/>
-              <Value1 XAdvance="-40"/>
+              <Value1 XAdvance="-50"/>
             </PairValueRecord>
           </PairSet>
         </PairPos>

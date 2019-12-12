@@ -5,15 +5,17 @@
 ## やったこと
 
 - afdko
-  - [margefonts](./afdko/margefonts/README.md)
-  - [makeotf](./afdko/makeotf/README.md)
-  - [txでのグリフ一覧pdf出力](./afdko/tx-pdf/README.md)
-  - [rotatefont](./afdko/rotatefont/README.md)
-  - [ttxで.ttxを吐き出してみる](./afdko/ttx/README.md)
+  - [margefontsを使う](./afdko/margefonts/)
+  - [makeotfを使う](./afdko/makeotf/)
+  - [txでのグリフ一覧pdf出力](./afdko/tx-pdf/)
+  - [rotatefontを使う](./afdko/rotatefont/)
+  - [ttxを出力してみる](./afdko/ttx/)
 - ufo
-  - [otf2ufo](./ufo/otf2ufo/README.md)
-  - [svgをufo経由でotfにする(svg2otf-via-ufo)](./ufo/svg2otf-via-ufo/README.md)
-  - [latin-font](./ufo/latin-font/README.md)
+  - [otfからufoへ変換](./ufo/otf2ufo/)
+  - [svgをufo経由でotfにする](./ufo/svg2otf-via-ufo/)
+  - [latinフォントを作る](./ufo/latin-font/)
+  - [カーニングをつける](./ufo/latin-font-kerned/)
+    - [最初うまくつけられなかったのでその調査と解決までの記録](./ufo/kern-probrem-fix/)
 
 ## やってみたいこと
 
@@ -22,12 +24,10 @@
 - [ ] OpenTypeのfeaturesについていろいろ作ってみたい
   - [ ] GSUB(リガチャ)
   - [ ] GSUB(縦書き)
-  - [ ] GPOS(ハイフンとか)
-  - その他いろいろ…
+  - [x] GPOS(ハイフンとか)
 - [ ] バリアブルフォントを作ってみたい
 - [ ] カラー絵文字を作ってみたい
-- [ ] fonttools(≒ttx?)を使ってみたい
-- [ ] svg => ttx => otf を作ってみたい
+- [x] fonttools(≒ttx?)を使ってみたい
  
 ## キーワード
 
