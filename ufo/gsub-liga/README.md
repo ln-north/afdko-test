@@ -79,7 +79,11 @@ python3 ./scripts/publish.py ./LnLiga.ufo ./LnLiga.otf
 - UFO 仕様
   - http://unifiedfontobject.org/versions/ufo3/features.fea/
 - AFDKO の features ファイルの syntax と仕様
-  - https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
+  - https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html#5
 
 ## 感想
 
+- ufoの必要な各ファイル生成からotfの出力までをスクリプトで自動化したため、かなり楽になった
+- AFDKOのsyntaxの用例からGSUBにいくつか種類がありligaはその一つのfeatureで有ることを理解した
+  - いろいろ奥深そう、一つ一つ試したい
+- 最初、glifのファイル名を0061...と数字にしていたため、publishするときにfeature.feaのコンパイル中にstringを期待した挙動の箇所で落ちてしまった。ファイル名はstringと判断される必要があるため、数字のみにはできないことがわかった

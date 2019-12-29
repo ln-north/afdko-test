@@ -16,13 +16,14 @@
   - [latinフォントを作る](./ufo/latin-font/)
   - [カーニングをつける](./ufo/latin-font-kerned/)
     - [最初うまくつけられなかったのでその調査と解決までの記録](./ufo/kern-probrem-fix/)
+  - [ligaを含むフォントを作る](./ufo/gsub-liga)
 
 ## やってみたいこと
 
 - [x] svg => ufo => otfで欧文フォントを作ってみたい
-- [ ] メトリクスについて理解する
+- [x] メトリクスについて理解する
 - [ ] OpenTypeのfeaturesについていろいろ作ってみたい
-  - [ ] GSUB(リガチャ)
+  - [x] GSUB(リガチャ)
   - [ ] GSUB(縦書き)
   - [x] GPOS(ハイフンとか)
 - [ ] バリアブルフォントを作ってみたい
