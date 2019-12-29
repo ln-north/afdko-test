@@ -1,3 +1,26 @@
+#!/bin/bash
+
+# ufoの初期ファイルを作る
+
+# USAGE
+# ./init.sh {fontname}
+
+fontname=$1
+
+mkdir ${fontname}.ufo/
+touch ${fontname}.ufo/features.fea \
+      ${fontname}.ufo/fontinfo.plist \
+      ${fontname}.ufo/groups.plist \
+      ${fontname}.ufo/kerning.plist \
+      ${fontname}.ufo/layercontents.plist \
+      ${fontname}.ufo/lib.plist \
+      ${fontname}.ufo/metainfo.plist
+mkdir ${fontname}.ufo/glyphs
+touch ${fontname}.ufo/glyphs/contents.plist
+touch ${fontname}.ufo/glyphs/_nodef.glif
+
+# fontinfo.plist
+cat <<EOF > ${fontname}.ufo/fontinfo.plist
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -9,7 +32,7 @@
     <key>descender</key>
     <integer>-280</integer>
     <key>familyName</key>
-    <string>LnLatingLiga-Light</string>
+    <string>${fontname}</string>
     <key>guidelines</key>
     <array/>
     <key>italicAngle</key>
@@ -36,7 +59,7 @@
     <key>openTypeHheaLineGap</key>
     <integer>1000</integer>
     <key>openTypeNamePreferredSubfamilyName</key>
-    <string>Light</string>
+    <string>Regular</string>
     <key>openTypeNameRecords</key>
     <array>
       <dict>
@@ -49,7 +72,7 @@
         <key>platformID</key>
         <integer>1</integer>
         <key>string</key>
-        <string>LnLatingLiga-Light</string>
+        <string>${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -61,7 +84,7 @@
         <key>platformID</key>
         <integer>3</integer>
         <key>string</key>
-        <string>LnLatingLiga-Light</string>
+        <string>${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -97,7 +120,7 @@
         <key>platformID</key>
         <integer>1</integer>
         <key>string</key>
-        <string>1.000;UKWN;LnLatingLiga-Light-Light</string>
+        <string>1.000;UKWN;${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -109,7 +132,7 @@
         <key>platformID</key>
         <integer>3</integer>
         <key>string</key>
-        <string>1.000;UKWN;LnLatingLiga-Light-Light</string>
+        <string>1.000;UKWN;${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -121,7 +144,7 @@
         <key>platformID</key>
         <integer>1</integer>
         <key>string</key>
-        <string>LnLatingLiga-Light</string>
+        <string>${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -133,7 +156,7 @@
         <key>platformID</key>
         <integer>3</integer>
         <key>string</key>
-        <string>LnLatingLiga-Light</string>
+        <string>${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -169,7 +192,7 @@
         <key>platformID</key>
         <integer>1</integer>
         <key>string</key>
-        <string>LnLatingLiga-Light-Light</string>
+        <string>${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -181,7 +204,7 @@
         <key>platformID</key>
         <integer>3</integer>
         <key>string</key>
-        <string>LnLatingLiga-Light-Light</string>
+        <string>${fontname}</string>
       </dict>
       <dict>
         <key>encodingID</key>
@@ -193,11 +216,11 @@
         <key>platformID</key>
         <integer>1</integer>
         <key>string</key>
-        <string>Light</string>
+        <string>Regular</string>
       </dict>
     </array>
     <key>openTypeNameUniqueID</key>
-    <string>1.000;UKWN;LnLatingLiga-Light-Light</string>
+    <string>1.000;UKWN;${fontname}</string>
     <key>openTypeNameVersion</key>
     <string>Version 1.000;hotconv 1.0.111;makeotfexe 2.5.65597 DEVELOPMENT</string>
     <key>openTypeOS2CodePageRanges</key>
@@ -283,9 +306,9 @@
     <key>postscriptFamilyOtherBlues</key>
     <array/>
     <key>postscriptFontName</key>
-    <string>LnLatingLiga-Light-Light</string>
+    <string>${fontname}</string>
     <key>postscriptFullName</key>
-    <string>AFDKO Sample Light</string>
+    <string>${fontname} Regular</string>
     <key>postscriptIsFixedPitch</key>
     <false/>
     <key>postscriptOtherBlues</key>
@@ -299,13 +322,13 @@
     <key>postscriptUnderlineThickness</key>
     <integer>50</integer>
     <key>postscriptWeightName</key>
-    <string>Light</string>
+    <string>Regular</string>
     <key>styleMapFamilyName</key>
-    <string>LnLatingLiga-Light</string>
+    <string>${fontname}</string>
     <key>styleMapStyleName</key>
     <string>regular</string>
     <key>styleName</key>
-    <string>Light</string>
+    <string>Regular</string>
     <key>unitsPerEm</key>
     <integer>1000</integer>
     <key>versionMajor</key>
@@ -316,3 +339,83 @@
     <integer>0</integer>
   </dict>
 </plist>
+EOF
+
+# groups.plist
+cat <<EOF > ${fontname}.ufo/groups.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+</dict>
+</plist>
+EOF
+
+# kerning.plist
+cat <<EOF > ${fontname}.ufo/kerning.plist
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+  </dict>
+</plist>
+EOF
+
+# layercontents.plist
+cat <<EOF > ${fontname}.ufo/layercontents.plist
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <array>
+      <string>public.default</string>
+      <string>glyphs</string>
+    </array>
+  </array>
+</plist>
+EOF
+
+# metainfo.plist
+cat <<EOF > ${fontname}.ufo/metainfo.plist
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>creator</key>
+    <string>com.github.fonttools.ufoLib</string>
+    <key>formatVersion</key>
+    <integer>3</integer>
+  </dict>
+</plist>
+EOF
+
+# glyphs/_nodef.glif
+
+cat <<EOF > ${fontname}.ufo/glyphs/_nodef.glif
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name=".notdef" format="2">
+  <advance height="1000" width="1000"/>
+  <outline>
+    <contour>
+      <point x="66" y="33" type="line"/>
+      <point x="66" y="633" type="line"/>
+      <point x="265" y="633" type="line"/>
+      <point x="265" y="33" type="line"/>
+    </contour>
+    <contour>
+      <point x="33" y="0" type="line"/>
+      <point x="298" y="0" type="line"/>
+      <point x="298" y="666" type="line"/>
+      <point x="33" y="666" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.verticalOrigin</key>
+      <integer>880</integer>
+    </dict>
+  </lib>
+</glyph>
+
+EOF

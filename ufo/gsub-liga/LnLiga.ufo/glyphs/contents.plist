@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>.nodef</key>
+    <string>_nodef.glif</string>
+    <key>uni0061</key>
+    <string>uni0061.glif</string>
+    <key>uni0062</key>
+    <string>uni0062.glif</string>
+    <key>uni0063</key>
+    <string>uni0063.glif</string>
+    <key>uni0064</key>
+    <string>uni0064.glif</string>
+    <key>uni0065</key>
+    <string>uni0065.glif</string>
+    <key>uni0066</key>
+    <string>uni0066.glif</string>
+    <key>uni0067</key>
+    <string>uni0067.glif</string>
+    <key>uni0068</key>
+    <string>uni0068.glif</string>
+    <key>uni0069</key>
+    <string>uni0069.glif</string>
+    <key>uniFB00</key>
+    <string>uniFB00.glif</string>
+    <key>uniFB01</key>
+    <string>uniFB01.glif</string>
+  </dict>
+</plist>

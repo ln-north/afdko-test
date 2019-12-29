@@ -1,0 +1,4 @@
+feature liga {
+  sub uni0066 uni0066 by uniFB00;
+  sub uni0066 uni0069 by uniFB01;
+} liga;
